@@ -1,0 +1,33 @@
+#overlay
+    position: fixed
+    z-index: 99999
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background: linear-gradient(to bottom,#bb835e 0,#d3af56 33%,#b68c47 66%,#936238)
+    transition: 1s 0.4s
+
+#progress
+    height: 1px
+    margin-top: 20px
+    background: #000
+    width: 0
+    transition: 1s
+    display: none
+#overlay
+    .progstat-wrapper
+        color: #000
+        font-size: 0.7em
+        letter-spacing: 3px
+        // position: absolute
+        // top: 50%
+        margin-top: 20px
+        width: 100%
+        text-align: center
+    .loader
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column

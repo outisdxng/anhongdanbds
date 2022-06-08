@@ -1,0 +1,80 @@
+section.san-pham-ct-1.lmp-section
+    .container
+        .row
+            .col-lg-6
+                .image-wrapper
+                    .active-wrapper
+                        .swiper-container
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .image
+                                        img(src="./img/product-1.png", alt="")
+                                .swiper-slide
+                                    .image
+                                        img(src="./img/product3.png", alt="")
+                                .swiper-slide
+                                    .image
+                                        img(src="./img/product4.png", alt="")
+                                .swiper-slide
+                                    .image
+                                        img(src="./img/product5.png", alt="")
+                    .thumb-wrapper
+                        .swiper-prev
+                            em.lnr.lnr-chevron-left
+                        .swiper-container
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .image
+                                        img(src="./img/product-1.png", alt="")
+                                .swiper-slide
+                                    .image
+                                        img(src="./img/product3.png", alt="")
+                                .swiper-slide
+                                    .image
+                                        img(src="./img/product4.png", alt="")
+                                .swiper-slide
+                                    .image
+                                        img(src="./img/product5.png", alt="")
+                        .swiper-next
+                            em.lnr.lnr-chevron-right
+            .col-lg-6
+                .content-wrapper
+                    h1.mb-1.mb-lg-2 Đèn bàn 3
+                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    ul.mt-2
+                        li
+                            b Cấu trúc:
+                            span  sắt, thép không gỉ, niken đen, đồng thau, mạ đồng và mạ vàng.
+                        li
+                            b Cấu trúc:
+                            span  sắt, thép không gỉ, niken đen, đồng thau, mạ đồng và mạ vàng.
+                        li
+                            b Cấu trúc:
+                            span  sắt
+                                br
+                                | test
+                                br
+                                | t\sst
+                    a(href="#").lmp-button.border.mt-3
+                        span Liên hệ
+section.san-pham-ct-2.lmp-section
+    .container
+        h2.lmp-title.center.mb-2 Sản phẩm liên quan
+        .product-related-slider
+            .swiper-container
+                .swiper-wrapper
+                    -for(i=0;i<5;i++)
+                        .swiper-slide
+                            .product-item
+                                figure
+                                    a(href="#")
+                                        .image
+                                            img(src="./img/product2.png", alt="")
+                                    figcaption
+                                        h5
+                                            a(href="#") Đèn bàn 1
+            .swiper-navigation
+                .swiper-prev
+                    em.mdi.mdi-arrow-left
+                .swiper-next
+                    em.mdi.mdi-arrow-right

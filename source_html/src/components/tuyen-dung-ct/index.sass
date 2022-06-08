@@ -1,0 +1,73 @@
+.tuyen-dung-ct
+    .heading-wrapper
+        h1
+            color: #582133
+            @media(min-width: 1025px)
+                font-size: 36px
+    .content-wrapper
+        table
+            margin-bottom: 40px
+            width: 100%
+            tr
+                td
+                    padding: 7px 30px
+                    font-size: 16px
+                    &:nth-child(1)
+                        width: 30%
+                        white-space: nowrap
+                        font-weight: 700
+                &:nth-child(odd)
+                    background: #f1ede5
+        h2
+            font-size: 20px
+            text-transform: uppercase
+            color: #582133
+            margin-bottom: 15px
+            @media(min-width: 1025px)
+                font-size: 26px
+        ul
+            margin-bottom: 40px
+            li
+                display: flex
+                align-items: baseline
+                + li
+                    margin-top: 10px
+                &::before
+                    margin-right: 5px
+                    content: '\e802'
+                    font-size: 11px
+                    font-family: Linearicons-Free
+    .link
+        margin: -5px -10px
+        a
+            margin: 5px 10px
+            &:hover
+                span
+                    color: #fff
+        @media(max-width: 1025px)
+            text-align: center
+    .other-wrapper
+        margin-top: 30px
+        @media(min-width: 1025px)
+            margin-top: 0
+        .heading
+            text-align: center
+            color: #fff
+            padding: 15px
+            text-transform: uppercase
+            font-size: 20px
+            background-image: linear-gradient( to right, rgb(187,131,94) 0%, rgb(211,175,86) 33%, rgb(182,140,71) 66%, rgb(147,98,56) 100%)
+        .list
+            .item
+                color: #666666
+                font-weight: 500
+                border-bottom: 1px solid #fff
+                background: #f8f6f2
+                padding: 5px 30px
+                a
+                    display: block
+                time
+                    font-size: 12px
+                &:hover
+                    color: #582133
+                    background: #fefdfc

@@ -1,0 +1,23 @@
+section.san-pham-ds-1.lmp-section
+    .container  
+        h1.lmp-title.center.mb-1 Sản phẩm trang trí
+        .lmp-navigation 
+            .mobile-toggle Danh mục
+            ul
+                li
+                    a(href="#") Thư ngỏ
+                li
+                    a(href="#") Giới thiệu LMP
+                li
+                    a(href="#") Vì sao chọn LMP
+        .product-list.mt-3
+            .row
+                -for(i=0;i<10;i++)
+                    .col-lg-4.col-sm-6.product-item
+                        figure
+                            a(href="#")
+                                .image
+                                    img(src="./img/product2.png", alt="")
+                            figcaption
+                                h5
+                                    a(href="#") Đèn bàn 1

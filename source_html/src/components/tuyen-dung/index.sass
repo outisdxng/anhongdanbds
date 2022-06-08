@@ -1,0 +1,63 @@
+.tuyen-dung-1
+    .top-wrapper
+        .image-wrapper
+            height: 100%
+            img
+                height: 100%
+                width: 100%
+        .content-wrapper
+            padding-top: 15px
+            h3
+                text-transform: uppercase
+                color: #582133
+            @media(min-width: 1025px)
+                padding-top: 0
+                h3
+                    font-size: 26px
+    .bottom-wrapper
+        margin-top: 30px
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        padding: 10px
+        min-height: 300px
+        p
+            font-size: 18px
+            color: #fff
+        @media(min-width: 1025px)
+            margin-top: 60px
+            p
+                font-size: 24px
+                max-width: 900px
+                margin: 0 auto
+.tuyen-dung-2
+    padding-top: 0
+    .table
+        overflow-x: auto
+        table
+            width: 100%
+            tr
+                td, th
+                    padding: 10px 20px
+                    text-align: center
+                    &:nth-child(2)
+                        text-align: left
+                th
+                    white-space: nowrap
+                    text-transform: uppercase
+                    color: #fff
+                    font-weight: 600
+            thead
+                background-image: linear-gradient( to right, rgb(187,131,94) 0%, rgb(211,175,86) 33%, rgb(182,140,71) 66%, rgb(147,98,56) 100%)
+            tbody
+                background: #f1ede5
+                tr
+                    border-bottom: 1px solid #fff
+                    td
+                        font-weight: 500
+                        color: #666666
+                    &:hover
+                        background: #fcfbfa
+                        td
+                            color: #582133

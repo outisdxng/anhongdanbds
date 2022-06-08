@@ -1,0 +1,29 @@
+
+.modulepager
+    .pagination
+        margin-top: 30px
+        margin-bottom: 30px
+        display: flex
+        list-style-type: none
+        justify-content: center
+        li
+            margin: 0 5px
+            color: #333333
+            &:last-child
+                margin-right: 0
+            a, span
+                display: flex
+                align-items: center
+                justify-content: center
+                transition: all .4s ease-in-out
+                width: 38px
+                height: 38px
+                color: #666666
+                background: #f1ede5
+                font-size: 15px
+            // .LastPage, .NextPage, .BackPage, .FirstPage
+            //     display: none
+            &.active, &:hover
+                a, span
+                    background: #582133
+                    color: #fff

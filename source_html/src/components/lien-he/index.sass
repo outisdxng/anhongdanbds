@@ -1,0 +1,52 @@
+.lien-he
+    .content-wrapper
+        padding: 20px
+        padding-right: 5px
+        background: #fff
+        box-shadow: 1px 1.732px 7px 0px rgba(0, 0, 0, 0.11)
+        color: #582133
+        h2
+            padding: 0 20px
+            font-size: 22px
+            margin-bottom: 10px
+            text-transform: uppercase
+        h3
+            font-size: 26px
+            margin-bottom: 15px
+        .list-item
+            padding-right: 15px
+            max-height: 394px
+            overflow-y: auto
+            &::-webkit-scrollbar
+                width: 3px
+            &::-webkit-scrollbar-track
+                background: #f1f1f1
+            &::-webkit-scrollbar-thumb
+                background: #582133
+            &::-webkit-scrollbar-thumb:hover
+                background: #555
+            .item
+                padding: 20px
+                transition: .4s ease-in-out all
+                &:hover, &.active
+                    background: #f1ede5
+                h3
+                    font-size: 18px
+                    color: #582133
+                    margin-bottom: 10px
+                p
+                    margin-bottom: 6px
+                    align-items: baseline
+                    display: flex
+                    font-size: 16px
+                    em
+                        width: 20px
+                        text-align: center
+                        font-size: 14px
+                        color: #acacac
+                        margin-right: 10px
+    .map-wrapper
+        iframe
+            height: 300px
+            @media(min-width: 1025px)
+                height: 500px

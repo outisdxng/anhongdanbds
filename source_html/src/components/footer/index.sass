@@ -1,0 +1,175 @@
+footer
+    overflow-x: hidden
+    background: url('https://www.obayashivn.com/Data/Sites/1/skins/default/img/bg-footer.png')
+    color: #582133
+    .top-wrapper
+        @media(min-width: 1025px)
+            padding: 80px 0
+        .content-wrapper
+            h3
+                text-transform: uppercase
+                margin-bottom: 10px
+                @media(min-width: 1025px)
+                    font-size: 26px
+            p
+                margin-bottom: 10px
+                font-size: 16px
+                a
+                    em
+                        margin-right: 7px
+    .bottom-wrapper
+        border-top: 1px solid rgba(255,255,255,.1)
+        text-align: center
+        background: #582133
+        padding: 10px 0
+        font-size: 13px
+        color: #fff
+        .main-wrapper
+            padding: 0 15px
+        .copyright-wrapper
+            p
+                font-style: italic
+                a
+                    &:hover
+                        text-decoration: underline
+        .list-page-wrapper
+            margin: 10px 0
+            ul
+                li
+                    a
+                        padding: 0 10px
+                        text-transform: uppercase
+                        font-size: 14px
+        ul
+            li
+                display: inline-block
+        .social-wrapper
+            ul
+                li
+                    a
+                        font-size: 16px
+                        padding: 0 10px
+        @media(min-width: 1025px)
+            .main-wrapper
+                display: flex
+                align-items: center
+                justify-content: space-between
+                max-width: 1410px
+                margin: 0 auto
+                .left-wrapper
+                    display: flex
+                    align-items: center
+                    .list-page-wrapper
+                        margin: 0
+                        margin-left: 50px
+                        ul
+                            li
+                                a
+                                    font-size: 13px
+    .wrap-form
+        margin-top: 30px
+
+        input, textarea
+            border: 1px solid #333
+            background: none
+            padding: 12px 20px
+            width: 100%
+            color: #333
+            caret-color: #333
+            font-size: 14px
+
+        input:placeholder, textarea:placeholder
+            color: #333
+
+        input:focus
+            -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3)
+            outline: none
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3)
+            border-color: #333
+
+        textarea
+            &:focus
+                -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3)
+                outline: none
+                box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3)
+                border-color: #333
+
+                height: 100px
+        .frm-btnwrap
+            margin-top: 20px
+        > div
+            .note
+                color: #666
+                padding-left: 5px
+            .qtext
+                -webkit-box-flex: 0
+                -ms-flex: 0 0 100%
+                flex: 0 0 100%
+                margin-bottom: 20px
+                padding: 0 5px
+
+            .qparagraph
+                // margin-bottom: 20px
+                padding: 0 5px
+                -webkit-box-flex: 0
+                -ms-flex: 0 0 100%
+                flex: 0 0 100%
+
+            .question-input
+                -webkit-box-flex: 0
+                -ms-flex: 0 0 100%
+                flex: 0 0 100%
+
+            span
+                color: red
+                font-size: 13px
+
+        .frm-btnwrap
+            .frm-btn-reset, label
+                display: none
+
+            .frm-btn
+                width: 100%
+                text-align: center
+            input
+                background: none
+                border: none
+                width: 215px
+                box-shadow: inset 0 0 0 2px #bb835e
+                padding: 12px 30px
+                color: #582133
+                font-size: 16px
+                transition: .4s ease-in-out all
+                font-weight: 600
+                text-transform: uppercase
+                &:hover
+                    background: linear-gradient(90deg,#ba8361,#d1ad5b,#b2874b,#93613c)
+                    color: #fff
+    @media (max-width: 768px)
+        .wrap-form > div .qtext
+            -webkit-box-flex: 0
+            -ms-flex: 0 0 100%
+            flex: 0 0 100%
+
+    @media (min-width: 768px)
+        .wrap-form > div:first-child
+            -webkit-column-count: 2
+            -moz-column-count: 2
+            column-count: 2
+            // height: 215px
+            display: block
+            .qtext input
+                height: 45px
+            .qparagraph textarea
+                height: 176px
+        .wrap-form
+            .frm-btnwrap
+                margin-top: 0
+            &>div .qparagraph
+                margin-bottom: 0
+            .frm-btnwrap
+                margin: 0 5px
+                .frm-btn
+                    margin-top: 20px
+                    margin-left: auto
+                    width: calc((100% - 30px)/ 2)

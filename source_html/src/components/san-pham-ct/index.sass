@@ -1,0 +1,102 @@
+.san-pham-ct-1
+    .thumb-wrapper
+        display: flex
+        // align-items: center
+        .image
+            border: 1px solid #e1e1e1
+            padding: 0 20px
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                max-height: 100px
+        .swiper-slide-thumb-active
+            .image
+                border: 1px solid #582133
+        .swiper-container
+            width: 100%
+            .swiper-slide
+                // width: auto!important
+    .active-wrapper
+        margin-bottom: 20px
+        .image
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 30px
+            border: 1px solid #e1e1e1
+            img
+                max-height: 180px
+                height: 100%
+                @media(min-width: 576px)
+                    max-height: 500px
+        .swiper-slide
+            img
+                opacity: 0
+                transition: .4s ease-in-out all
+        .swiper-slide-active
+            img
+                opacity: 1
+    .swiper-next, .swiper-prev
+        display: flex
+        padding: 0 5px
+        align-items: center
+        justify-content: center
+        color: #999
+        font-size: 30px
+        &:focus
+            outline: none
+        @media(min-width: 576px)
+            padding: 0 20px
+    .content-wrapper
+        padding-top: 50px
+        @media(min-width: 1025px)
+            padding-top: 0
+        h1
+            color: #582133
+            @media(min-width: 576px)
+                font-size: 36px
+        p
+            font-weight: 500
+        ul
+            li
+                padding: 10px
+                border-bottom: 1px solid #d7d7d7
+                display: flex
+                b
+                    white-space: nowrap
+                    margin-right: 5px
+        .lmp-button.border
+            padding: 15px 70px
+            font-size: 14px
+            text-transform: initial
+            &:hover
+                color: #fff
+.san-pham-ct-2
+    background: #f7f4ef
+    .swiper-navigation
+        display: flex
+        justify-content: center
+        >div
+            margin: 0 5px
+            width: 40px
+            height: 40px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 18px
+            background: #582133
+            color: #fff
+            &:focus
+                outline: none
+    @media(min-width: 1025px)
+        .swiper-navigation
+            justify-content: flex-end
+            >div
+                cursor: pointer
+                width: auto
+                height: auto
+                background: none
+                color: #999
+                &:hover
+                    color: #582133
